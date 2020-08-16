@@ -5,9 +5,9 @@ ENV HOME=/root \
 	DEBIAN_FRONTEND=noninteractive \
 	LANG=en_US.UTF-8 \
 	LANGUAGE=en_US.UTF-8 \
-	LC_ALL=C.UTF-8 
+	LC_ALL=C.UTF-8
 
-RUN apk --update --upgrade add git bash nodejs nodejs-npm python3\
+RUN apk --update --upgrade add git bash nodejs nodejs-npm python3 \
 	\
 	&& git clone https://github.com/novnc/noVNC.git /root/noVNC \
 	&& git clone https://github.com/novnc/websockify /root/noVNC/utils/websockify \
