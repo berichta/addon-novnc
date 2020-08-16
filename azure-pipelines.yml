@@ -27,4 +27,4 @@ steps:
     --no-cache \
     -d berichta -i novnc-{arch}
   condition: succeeded()
-  displayName: Build and push caddy2 with tag :latest
+  displayName: Build and push novnc with tag :latest
