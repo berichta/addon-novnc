@@ -1,4 +1,5 @@
-FROM hassioaddons/base:8.0.1
+ARG BUILD_FROM
+FROM $BUILD_FROM
 
 ENV HOME=/root \
 	DEBIAN_FRONTEND=noninteractive \
